@@ -1,0 +1,6 @@
+<h2>New blog</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: blog_path(@conn, :create) %>
+
+<%= link "Back", to: blog_path(@conn, :index) %>
